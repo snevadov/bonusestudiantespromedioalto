@@ -126,9 +126,57 @@ const mostrarmat = () => {
 	
 }
 
+//Función para calcular el promedio de un estudiante
+const promedio = (estudiante) => {
+	
+	let promedio = 0;
+
+	
+	//Muestro error si ganan y si pierden
+	if(!estudiante)
+	{
+		console.log("No se ha enviado ningún estudiante para calcular el promedio");
+		promedio = 0;
+	}
+	else
+	{
+		//Calculo el promedio
+		promedio = (estudiante.matematicas + estudiante.ingles + estudiante.programacion)/3;
+	}
+
+	return promedio;
+	
+}
+
+//Función para mostrar estudiantes con promedio superior a 3
+const mostrarpromedioalto = () => {
+	
+	//Cargo el listado
+	listar();
+
+	//Busco un estudiante
+	let promedioAlto = listaEstudiantes.filter(est => promedio(est) >= 3);
+	
+	//Muestro error si ganan y si pierden
+	if(promedioAlto.length == 0)
+	{
+		console.log("Ningún estudiante tiene promedio alto");
+	}
+	else
+	{
+		//Recorro estudiantes y los muestro
+		promedioAlto.forEach(estudiante => {
+			console.log(estudiante.nombre);
+			console.log('Promedio: ' + promedio(estudiante) + '\n');
+		});
+	}
+	
+}
+
 module.exports = {
 	crear,
 	mostrar,
 	mostrarest,
-	mostrarmat
+	mostrarmat,
+	mostrarpromedioalto
 }

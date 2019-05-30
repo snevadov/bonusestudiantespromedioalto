@@ -40,6 +40,10 @@ switch (comando){
 		funciones.mostrarmat();
 		break;
 
+	case 'mostrarpromedioalto':
+		funciones.mostrarpromedioalto();
+		break;
+
 	default:
 		console.log('No ingresó una función existente');
 }

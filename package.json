@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/snevadov/bonusestudiantespromedioalto/issues"
   },
-  "homepage": "https://github.com/snevadov/bonusestudiantespromedioalto#readme"
+  "homepage": "https://github.com/snevadov/bonusestudiantespromedioalto#readme",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  }
 }

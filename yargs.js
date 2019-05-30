@@ -38,6 +38,7 @@ const argv = require('yargs')
 	.command('mostrar','Muestra el estudiante y sus notas')
 	.command('mostrarest','Muestra el estudiante y sus notas', muestraest)
 	.command('mostrarmat','Muestra estudiantes que ganan')
+	.command('mostrarpromedioalto','Muestra estudiantes con promedio superior a 3')
 	.argv;
 
 //permito exportación de la función y la constante
