@@ -1,0 +1,19 @@
+{
+  "name": "bonusestudiantespromedioalto",
+  "version": "1.0.0",
+  "description": "Ejercicio para mostrar estudiantes con promedio alto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snevadov/bonusestudiantespromedioalto.git"
+  },
+  "author": "Sebastán snevadov@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snevadov/bonusestudiantespromedioalto/issues"
+  },
+  "homepage": "https://github.com/snevadov/bonusestudiantespromedioalto#readme"
+}
