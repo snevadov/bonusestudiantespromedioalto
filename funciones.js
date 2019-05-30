@@ -132,7 +132,7 @@ const promedio = (estudiante) => {
 	let promedio = 0;
 
 	
-	//Muestro error si ganan y si pierden
+	//Muestro error si no envío estudiante
 	if(!estudiante)
 	{
 		console.log("No se ha enviado ningún estudiante para calcular el promedio");
@@ -157,7 +157,7 @@ const mostrarpromedioalto = () => {
 	//Busco un estudiante
 	let promedioAlto = listaEstudiantes.filter(est => promedio(est) >= 3);
 	
-	//Muestro error si ganan y si pierden
+	//Muestro error si hay promedio alto
 	if(promedioAlto.length == 0)
 	{
 		console.log("Ningún estudiante tiene promedio alto");
